@@ -1,7 +1,7 @@
 /**
  * CodeSnippet by csegundo
  * code.snippet.js
- * Copyright (c) 2021 [Carlos](https://github.com/csegundo)
+ * Copyright (c) 2021 [Carlos](https://github.com/csegundo/CodeSnippet)
  */
 
 $(function(){
