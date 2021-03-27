@@ -67,7 +67,7 @@ _You can also create alter the styles for different occasions, warning of good c
 ## Status and version 🚀
 Status: _unfinished_.
 
-Version: v1.1.0
+Version: _v1.1.0_
 
 
 ---
