@@ -12,7 +12,7 @@ _Below is a table of contents with the minimum versions of the browsers in which
 |-----------------|---------|-------------|--------|----------|-------|--------|----|------|
 | Minimum version | v1.12.4 | v4.7.0      |        |          |       |        |    |      |
 
-## How to embed ✒️
+## How to embed 🔧
 Lo primero de todo tendrás que incluir tanto el JS como el CSS de _CodeSnippet_ en tu página HTML.
 
 _First of all you will have to include both the JS and the CSS of _CodeSnippet_ in your HTML page._
@@ -63,6 +63,14 @@ _You can also create alter the styles for different occasions, warning of good c
 ![Warning](https://github.com/csegundo/CodeSnippet/blob/main/images/warning.png)
 
 ![Danger](https://github.com/csegundo/CodeSnippet/blob/main/images/danger.png)
+
+## Status and version 🚀
+Estado actual: sin finalizar.
+
+Current status: unfinished.
+
+Version: v1.1.0
+
 
 ---
 ⌨️ with ❤️ by [csegundo](https://github.com/csegundo/BayShop) 😊
