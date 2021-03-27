@@ -37,6 +37,10 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.html-code-snippet .copy::before{
+    font-family: 'FontAwesome';
+    content: "\f0c5";
+}
 
 .html-code-snippet ccode{
     display: block;

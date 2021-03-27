@@ -7,9 +7,9 @@
 $(function(){
     // Paste this code into your page
     $('.html-code-snippet').on('click', '.copy', function(){
-        var $temp = $('<input>');
+        var $temp = $('<textarea></textarea>');
         $('body').append($temp);
-        $temp.val($('.html-code-snippet ccode').html().trim()).select();
+        $temp.html($('.html-code-snippet ccode').html().trim()).select();
         document.execCommand("copy");
         $temp.remove();
     });

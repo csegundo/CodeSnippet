@@ -4,13 +4,23 @@ Pequeña libreria para insertar fragmentos de código en cualquier parte de tu p
 _Small library to insert code snippets anywhere on your HTML page. All you need is jQuery (see version in Requirements) for correct operation._
 
 ## Requirements ⚙️
+Requisitos necesarios para el correcto funcionamiento. Tu página debe disponer de los siguientes elementos.
+
+_Necessary requirements for proper operation. Your page must have the following elements._
+
+* [jQuery](https://code.jquery.com/) - Download link
+* [FontAwesome](https://fontawesome.com/v4.7.0/get-started/) - Download link
+* [CSS](https://github.com/csegundo/CodeSnippet/blob/main/minified/code.snippet.min.css) - CSS CodeSnippet
+* [JS](https://github.com/csegundo/CodeSnippet/blob/main/minified/code.snippet.min.js) - JS CodeSnippet
+
+
 A continuación se muestra una tabla de contenidos con las versiones mínimas de los navegadores en los que se pueden insertar estos bloques o fragmentos de código.
 
 _Below is a table of contents with the minimum versions of the browsers in which these blocks or code snippets can be inserted._
 
 |                 | jQuery  | FontAwesome | Chrome | Firefox  | Opera | Safari | IE | Edge |
 |-----------------|---------|-------------|--------|----------|-------|--------|----|------|
-| Minimum version | v1.12.4 | v4.7.0      |        |          |       |        |    |      |
+| Minimum version | v1.12.4 | v4.7.0      | 4      | 3.5      | 10    | 3.1    | 9  | 12   |
 
 ## How to embed 🔧
 Lo primero de todo tendrás que incluir tanto el JS como el CSS de _CodeSnippet_ en tu página HTML.
@@ -35,7 +45,7 @@ _To insert a code snippet, you just have to include the skeleton shown below:_
 
 ```
 <div class="html-code-snippet">
-    <span class="copy" title="Copy to clipboard!"><i class="fa fa-files-o"></i></span>
+    <span class="copy"></span>
     <ccode>
         your code snippet here
     </ccode>
@@ -48,7 +58,7 @@ _You can also create alter the styles for different occasions, warning of good c
 
 ```
 <div class="html-code-snippet [success|warning|danger]">
-    <span class="copy" title="Copy to clipboard!"><i class="fa fa-files-o"></i></span>
+    <span class="copy"></span>
     <ccode>
         your code snippet here
     </ccode>
@@ -67,7 +77,7 @@ _You can also create alter the styles for different occasions, warning of good c
 ## Status and version 🚀
 Status: _unfinished_.
 
-Version: _v1.1.0_
+Version: _v1.1.1_
 
 
 ---
