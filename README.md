@@ -1,7 +1,7 @@
 # CodeSnippet
-Pequeña libreria para insertar fragmentos de código en cualquier parte de tu página HTML. Tan solo es necesario jQuery (ver versión en Requisitos) para el correcto funcionamiento.
+Pequeña libreria/complemento para insertar fragmentos de código en cualquier parte de tu página HTML.
 
-_Small library to insert code snippets anywhere on your HTML page. All you need is jQuery (see version in Requirements) for correct operation._
+_Small library/plugin to insert code snippets anywhere on your HTML page._
 
 ## Requirements ⚙️
 Requisitos necesarios para el correcto funcionamiento. Tu página debe disponer de los siguientes elementos.
