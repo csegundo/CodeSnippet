@@ -22,7 +22,7 @@ _Below is a table of contents with the minimum versions of the browsers in which
 |-----------------|---------|-------------|--------|----------|-------|--------|----|------|
 | Minimum version | v1.12.4 | v4.7.0      | 4      | 3.5      | 10    | 3.1    | 9  | 12   |
 
-## How to embed 🔧
+## How to embed (v1) 🔧
 Lo primero de todo tendrás que incluir tanto el JS como el CSS de _CodeSnippet_ en tu página HTML.
 
 _First of all you will have to include both the JS and the CSS of _CodeSnippet_ in your HTML page._
@@ -31,9 +31,9 @@ _First of all you will have to include both the JS and the CSS of _CodeSnippet_ 
 <script src="code.snippet.js"></script>
 ```
 
-También está disponible la versión minificada, archivos [aquí](https://github.com/csegundo/CodeSnippet/tree/main/minified).
+También está disponible la versión minificada, archivos [aquí](minified/).
 
-_The minified version is also available, files [here](https://github.com/csegundo/CodeSnippet/tree/main/minified)._
+_The minified version is also available, files [here](minified/)._
 ```
 <link rel="stylesheet" href="code.snippet.min.css">
 <script src="code.snippet.min.js"></script>
@@ -65,6 +65,24 @@ _You can also create alter the styles for different occasions, warning of good c
 </div>
 ```
 
+### How to embed (v2) 🔧
+Es otra forma de embeber este complemento en tu página web escribiendo menos código HTML.
+_It is another way to embed this plugin into your web page by writing less HTML code._
+
+```
+<!-- inside <head> -->
+<link rel="stylesheet" href="code.snippet.min.css">
+<script src="code.snippet.v2.min.js"></script>
+
+<!-- inside <body> -->
+<div class="html-code-snippet [success|warning|danger]">
+    your code snippet here
+</div>
+```
+
+Download [here](minified/code.snippet.v2.min.js).
+
+
 ## Examples 📦
 ![Default](images/ccodeDefault.png)
 
@@ -77,7 +95,7 @@ _You can also create alter the styles for different occasions, warning of good c
 ## Status and version 🚀
 Status: _unfinished_.
 
-Version: _v1.1.1_
+Version: _v1.2.0_
 
 
 ---
