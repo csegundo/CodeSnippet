@@ -67,6 +67,7 @@ _You can also create alter the styles for different occasions, warning of good c
 
 ### How to embed (v2) 🔧
 Es otra forma de embeber este complemento en tu página web escribiendo menos código HTML.
+
 _It is another way to embed this plugin into your web page by writing less HTML code._
 
 ```
