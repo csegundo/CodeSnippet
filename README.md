@@ -71,4 +71,4 @@ Version: _v1.1.0_
 
 
 ---
-⌨️ with ❤️ by [csegundo](https://github.com/csegundo/BayShop) 😊
+⌨️ with ❤️ by [csegundo](https://github.com/csegundo) 😊
