@@ -66,13 +66,13 @@ _You can also create alter the styles for different occasions, warning of good c
 ```
 
 ## Examples 📦
-![Default](https://github.com/csegundo/CodeSnippet/blob/main/images/default.png)
+![Default](images/ccodeDefault.png)
 
-![Success](https://github.com/csegundo/CodeSnippet/blob/main/images/success.png)
+![Success](images/ccodeSuccess.png)
 
-![Warning](https://github.com/csegundo/CodeSnippet/blob/main/images/warning.png)
+![Warning](images/ccodeWarning.png)
 
-![Danger](https://github.com/csegundo/CodeSnippet/blob/main/images/danger.png)
+![Danger](images/ccodeDanger.png)
 
 ## Status and version 🚀
 Status: _unfinished_.
