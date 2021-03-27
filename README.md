@@ -65,9 +65,7 @@ _You can also create alter the styles for different occasions, warning of good c
 ![Danger](https://github.com/csegundo/CodeSnippet/blob/main/images/danger.png)
 
 ## Status and version 🚀
-Estado actual: sin finalizar.
-
-Current status: unfinished.
+Status: _unfinished_.
 
 Version: v1.1.0
 
