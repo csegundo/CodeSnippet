@@ -36,13 +36,25 @@ $(function(){
     });
 
     $('.html-code-snippet').on('click', '.download', function(){
-        var $temp = $('<a></a>'),
-            $temp_ = $('<textarea></textarea>');
+        var $temp   = $('<a></a>'),
+            $temp_  = $('<textarea></textarea>'),
+            classes = $(this).parents('.html-code-snippet').attr('class').split(/\s+/),
+            downl   = '', _match = '', filename = 'ccode.';
+
+        $.each(classes, function(i, className){
+            _match = className.match(/download\-(\w+)/);
+            if(_match){
+                downl = _match[1];
+                return false;
+            }
+        });
+        
+        filename += downl || 'txt';
         $temp_.html($(this).parents('.html-code-snippet').find('ccode').html().trim());
         $temp_.hide();
         $('body').append($temp_);
         $temp.attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent($temp_.val().trim()));
-        $temp.attr('download', 'ccode');
+        $temp.attr('download', filename);
         $temp.hide();
         $('body').append($temp);
         $temp.get(0).click(); // jQuery ignores href when click() ==> native DOM method not

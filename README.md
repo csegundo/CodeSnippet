@@ -39,11 +39,7 @@ _First of all you will have to include both the JS and the CSS of _CodeSnippet_ 
 También está disponible la versión minificada, archivos [aquí](minified/).
 
 _The minified version is also available, files [here](minified/)._
-```
-<!-- inside <head> -->
-<link rel="stylesheet" href="ccode.snippet.min.css">
-<script src="ccode.snippet.min.js"></script>
-```
+
 
 Para insertar un fragmento de código tan solo deberás incluir el esqueleto mostrado a continuación:
 
@@ -51,7 +47,7 @@ _To insert a code snippet, you just have to include the skeleton shown below:_
 
 ```
 <!-- inside <body> -->
-<div class="html-code-snippet">
+<div class="html-code-snippet [success|warning|danger] [copy|downlaod]">
     your code snippet here
 </div>
 ```
@@ -60,44 +56,19 @@ También podrás crear alterar los estilos para diferentes ocasiones, advirtiend
 
 _You can also create alter the styles for different occasions, warning of good code (success), bad code (danger) and code to be careful with._
 
-```
-<!-- inside <body> -->
-<div class="html-code-snippet [success|warning|danger]">
-    your code snippet here
-</div>
-```
+---
 
 Existen 2 tipos de acciones, copiar al portapapeles o descargar. Para ello añade simplemente las siguientes clases en función de las acciones que quiera incluir en tu ejemplo.
 
 _There are 2 types of actions, copy to clipboard or download. To do this, simply add the following classes depending on the actions you want to include in your example._
 
-```
-<!-- inside <body> -->
-<div class="html-code-snippet [copy|downlaod]">
-    your code snippet here
-</div>
-```
+---
 
-Combinando todas las opciones quedaría algo similar al siguiente ejemplo:
+Para descargar un archivo en el formato adecuado al lenguaje de programación que estés mostrando como ejemplo, tan solo debes incluir la clase "download-[X]" donde "X" es extensión del archivo de cada lenguaje. Algunos ejemplos:
 
-_Combining all the options would be something similar to the following example:_
+_To download a file in the proper format for the programming language shown as an example, you just have to include the class "download- [X]" where "X" is the file extension of each language. Some examples:_
 
-```
-<!-- inside <head> -->
-<link rel="stylesheet" href="ccode.snippet.min.css">
-<script src="ccode.snippet.min.js"></script>
-
-<!-- inside <body> -->
-<div class="html-code-snippet [success|warning|danger] [copy|downlaod]">
-    your code snippet here
-</div>
-```
-
-Opciones de descarga (de momento solo está disponible en formato txt):
-
-_Download options (currently only available in txt format txt):_
-
-| Clase/Class             | Archivo/File |
+| HTML Clase/Class        | Archivo/File |
 |-------------------------|--------------|
 | .download               | .txt         |
 | .download.download-c    | .c           |
@@ -106,8 +77,14 @@ _Download options (currently only available in txt format txt):_
 | .download.download-css  | .css         |
 | .download.download-php  | .php         |
 | .download.download-html | .html        |
+| .download.download-[x]  | .[x]         |
 
-Download [here](minified/).
+
+¡Podrás jugar con cualquier extensión!
+
+_¡Podrás jugar con cualquier extensión!_
+
+Download files [here](minified/).
 
 
 ## Examples 📦
