@@ -95,15 +95,15 @@ Opciones de descarga (de momento solo está disponible en formato txt):
 
 _Download options (currently only available in txt format txt):_
 
-| Clase/Class    | Archivo/File |
-|----------------|--------------|
-|                | .txt         |
-| .download-c    | .c           |
-| .download-js   | .js          |
-| .download-cpp  | .cpp         |
-| .download-css  | .css         |
-| .download-php  | .php         |
-| .download-html | .html        |
+| Clase/Class             | Archivo/File |
+|-------------------------|--------------|
+| .download               | .txt         |
+| .download.download-c    | .c           |
+| .download.download-js   | .js          |
+| .download.download-cpp  | .cpp         |
+| .download.download-css  | .css         |
+| .download.download-php  | .php         |
+| .download.download-html | .html        |
 
 Download [here](minified/v2/).
 
