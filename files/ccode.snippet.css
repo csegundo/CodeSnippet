@@ -26,27 +26,30 @@
     border-color: #f5c6cb;
 }
 
-.html-code-snippet .copy,
-.html-code-snippet .download{
+.html-code-snippet .actions{
     position: absolute;
     top: 5px;
     right: 5px;
     z-index: 10;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.html-code-snippet .actions .copy,
+.html-code-snippet .actions .download{
     background-color: #fff;
     cursor: pointer;
     padding: 2px 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-left: 2px;
 }
-.html-code-snippet .copy::before{
+.html-code-snippet .actions .copy::before{
     font-family: 'FontAwesome';
     content: "\f0c5";
 }
 
-.html-code-snippet .download{
-    right: 35px;
-}
-.html-code-snippet .download::before{
+.html-code-snippet .actions .download::before{
     font-family: 'FontAwesome';
     content: "\f019";
 }

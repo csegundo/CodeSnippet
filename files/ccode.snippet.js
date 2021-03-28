@@ -19,8 +19,12 @@ $(function(){
             elems += '<span class="download"></span>';
             $(item).removeClass('download')
         }
+
+        if(elems){
+            elems = '<div class="actions">' + elems + '</div>';
+        }
         
-        $(item).html(elems + '<ccode>' + code + '</ccode>')
+        $(item).html(elems + '<ccode>' + code + '</ccode>');
     });
 
     $('.html-code-snippet').on('click', '.copy', function(){

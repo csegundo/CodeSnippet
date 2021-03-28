@@ -11,8 +11,8 @@ _Necessary requirements for proper operation. Your page must have the following 
 
 * [jQuery](https://code.jquery.com/) - Download link
 * [FontAwesome](https://fontawesome.com/v4.7.0/get-started/) - Download link
-* [CSS](minified/code.snippet.min.css) - CSS CodeSnippet
-* [JS](minified/code.snippet.min.js) - JS CodeSnippet
+* [CSS](minified/ccode.snippet.min.css) - CSS CodeSnippet
+* [JS](minified/ccode.snippet.min.js) - JS CodeSnippet
 
 
 A continuación se muestra una tabla de contenidos con las versiones mínimas de los navegadores en los que se pueden insertar estos bloques o fragmentos de código.
@@ -32,8 +32,8 @@ Lo primero de todo tendrás que incluir tanto el JS como el CSS de _CodeSnippet_
 _First of all you will have to include both the JS and the CSS of _CodeSnippet_ in your HTML page._
 ```
 <!-- inside <head> -->
-<link rel="stylesheet" href="code.snippet.css">
-<script src="code.snippet.js"></script>
+<link rel="stylesheet" href="ccode.snippet.css">
+<script src="ccode.snippet.js"></script>
 ```
 
 También está disponible la versión minificada, archivos [aquí](minified/).
@@ -41,8 +41,8 @@ También está disponible la versión minificada, archivos [aquí](minified/).
 _The minified version is also available, files [here](minified/)._
 ```
 <!-- inside <head> -->
-<link rel="stylesheet" href="code.snippet.min.css">
-<script src="code.snippet.min.js"></script>
+<link rel="stylesheet" href="ccode.snippet.min.css">
+<script src="ccode.snippet.min.js"></script>
 ```
 
 Para insertar un fragmento de código tan solo deberás incluir el esqueleto mostrado a continuación:
@@ -84,8 +84,8 @@ _Combining all the options would be something similar to the following example:_
 
 ```
 <!-- inside <head> -->
-<link rel="stylesheet" href="code.snippet.min.css">
-<script src="code.snippet.min.js"></script>
+<link rel="stylesheet" href="ccode.snippet.min.css">
+<script src="ccode.snippet.min.js"></script>
 
 <!-- inside <body> -->
 <div class="html-code-snippet [success|warning|danger] [copy|downlaod]">
@@ -123,9 +123,9 @@ Download [here](minified/).
 
 
 ## Status and version 🚀
-Status: _unfinished (working)_.
+Status: _first release_ ✅
 
-Version: _v1.4.0_
+Version: _v1.5.0_
 
 
 ---
