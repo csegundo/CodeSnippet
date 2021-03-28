@@ -11,8 +11,8 @@ _Necessary requirements for proper operation. Your page must have the following 
 
 * [jQuery](https://code.jquery.com/) - Download link
 * [FontAwesome](https://fontawesome.com/v4.7.0/get-started/) - Download link
-* [CSS](minified/code.snippet.min.css) - CSS CodeSnippet ([v2](minified/code.snippet.v2.min.js))
-* [JS](minified/code.snippet.min.js) - JS CodeSnippet ([v2](minified/code.snippet.v2.min.css))
+* [CSS](minified/code.snippet.min.css) - CSS CodeSnippet ([v2](minified/v2/code.snippet.v2.min.js))
+* [JS](minified/code.snippet.min.js) - JS CodeSnippet ([v2](minified/v2/code.snippet.v2.min.css))
 
 
 A continuación se muestra una tabla de contenidos con las versiones mínimas de los navegadores en los que se pueden insertar estos bloques o fragmentos de código.
