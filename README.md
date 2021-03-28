@@ -3,6 +3,7 @@ Pequeña libreria/complemento para insertar fragmentos de código en cualquier p
 
 _Small library/plugin to insert code snippets anywhere on your HTML page._
 
+
 ## Requirements ⚙️
 Requisitos necesarios para el correcto funcionamiento. Tu página debe disponer de los siguientes elementos.
 
@@ -10,17 +11,21 @@ _Necessary requirements for proper operation. Your page must have the following 
 
 * [jQuery](https://code.jquery.com/) - Download link
 * [FontAwesome](https://fontawesome.com/v4.7.0/get-started/) - Download link
-* [CSS](https://github.com/csegundo/CodeSnippet/blob/main/minified/code.snippet.min.css) - CSS CodeSnippet
-* [JS](https://github.com/csegundo/CodeSnippet/blob/main/minified/code.snippet.min.js) - JS CodeSnippet
+* [CSS](minified/code.snippet.min.css) - CSS CodeSnippet ([v2](minified/code.snippet.v2.min.js))
+* [JS](minified/code.snippet.min.js) - JS CodeSnippet ([v2](minified/code.snippet.v2.min.css))
 
 
 A continuación se muestra una tabla de contenidos con las versiones mínimas de los navegadores en los que se pueden insertar estos bloques o fragmentos de código.
 
 _Below is a table of contents with the minimum versions of the browsers in which these blocks or code snippets can be inserted._
 
-|                 | jQuery  | FontAwesome | Chrome | Firefox  | Opera | Safari | IE | Edge |
-|-----------------|---------|-------------|--------|----------|-------|--------|----|------|
-| Minimum version | v1.12.4 | v4.7.0      | 4      | 3.5      | 10    | 3.1    | 9  | 12   |
+|                    | jQuery  | FontAwesome | Chrome | Firefox  | Opera | Safari | IE | Edge |
+|--------------------|---------|-------------|--------|----------|-------|--------|----|------|
+| Minimum version v1 | v1.12.4 | v4.7.0      | 4      | 3.5      | 10    | 3.1    | 9  | 12   |
+| Minimum version v2 | v1.12.4 | v4.7.0      | 14     | 20       | 15    | 10.1   |🚫  | 13   |
+
+_Versions from [caniuse.com](https://caniuse.com/)_
+
 
 ## How to embed (v1) 🔧
 Lo primero de todo tendrás que incluir tanto el JS como el CSS de _CodeSnippet_ en tu página HTML.
@@ -65,23 +70,42 @@ _You can also create alter the styles for different occasions, warning of good c
 </div>
 ```
 
-### How to embed (v2) 🔧
-Es otra forma de embeber este complemento en tu página web escribiendo menos código HTML.
 
-_It is another way to embed this plugin into your web page by writing less HTML code._
+### How to embed (v2) 🔧
+Es otra forma de embeber este complemento en tu página web escribiendo menos código HTML. Además se ha añadido la opción de descarga.
+
+_It is another way to embed this plugin into your web page by writing less HTML code. In addition, the download option has been added._
+
+Podrás poner los estilos con algunas de las clases (success|warning|danger) o las acciones con algunas de las clases (copy|downlaod).
+
+_You can put the styles with some of the classes (success|warning|danger) or the actions with some of the classes (copy|downlaod)._
 
 ```
 <!-- inside <head> -->
-<link rel="stylesheet" href="code.snippet.min.css">
+<link rel="stylesheet" href="code.snippet.v2.min.css">
 <script src="code.snippet.v2.min.js"></script>
 
 <!-- inside <body> -->
-<div class="html-code-snippet [success|warning|danger]">
+<div class="html-code-snippet [success|warning|danger] [copy|downlaod]">
     your code snippet here
 </div>
 ```
 
-Download [here](minified/code.snippet.v2.min.js).
+Opciones de descarga (de momento solo está disponible en formato txt):
+
+_Download options (currently only available in txt format txt):_
+
+| Clase/Class    | Archivo/File |
+|----------------|--------------|
+|                | .txt         |
+| .download-c    | .c           |
+| .download-js   | .js          |
+| .download-cpp  | .cpp         |
+| .download-css  | .css         |
+| .download-php  | .php         |
+| .download-html | .html        |
+
+Download [here](minified/v2/).
 
 
 ## Examples 📦
@@ -93,10 +117,13 @@ Download [here](minified/code.snippet.v2.min.js).
 
 ![Danger](images/ccodeDanger.png)
 
-## Status and version 🚀
-Status: _unfinished_.
+![Download](images/ccodeDownload.png)
 
-Version: _v1.2.0_
+
+## Status and version 🚀
+Status: _unfinished (working)_.
+
+Version: _v1.3.0_
 
 
 ---

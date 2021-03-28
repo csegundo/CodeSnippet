@@ -1,0 +1,60 @@
+/**
+ * CodeSnippet by csegundo
+ * code.snippet.v2.css
+ * Copyright (c) 2021 [Carlos](https://github.com/csegundo/CodeSnippet)
+ */
+
+.html-code-snippet{
+    margin: 1rem 15%;
+    border: 1px solid #d6d8db;
+    border-radius: 5px;
+    background-color: #e2e3e5;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.html-code-snippet.success{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.html-code-snippet.warning{
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.html-code-snippet.danger{
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.html-code-snippet .copy,
+.html-code-snippet .download{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.html-code-snippet .copy::before{
+    font-family: 'FontAwesome';
+    content: "\f0c5";
+}
+
+.html-code-snippet .download{
+    right: 35px;
+}
+.html-code-snippet .download::before{
+    font-family: 'FontAwesome';
+    content: "\f019";
+}
+
+.html-code-snippet ccode{
+    display: block;
+    overflow-x: auto;
+    font-size: 87.5%;
+    white-space: pre;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
