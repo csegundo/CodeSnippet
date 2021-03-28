@@ -1,6 +1,6 @@
 /**
  * CodeSnippet by csegundo
- * code.snippet.css
+ * ccode.snippet.css
  * Copyright (c) 2021 [Carlos](https://github.com/csegundo/CodeSnippet)
  */
 
@@ -26,7 +26,8 @@
     border-color: #f5c6cb;
 }
 
-.html-code-snippet .copy{
+.html-code-snippet .copy,
+.html-code-snippet .download{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -40,6 +41,14 @@
 .html-code-snippet .copy::before{
     font-family: 'FontAwesome';
     content: "\f0c5";
+}
+
+.html-code-snippet .download{
+    right: 35px;
+}
+.html-code-snippet .download::before{
+    font-family: 'FontAwesome';
+    content: "\f019";
 }
 
 .html-code-snippet ccode{

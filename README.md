@@ -11,27 +11,27 @@ _Necessary requirements for proper operation. Your page must have the following 
 
 * [jQuery](https://code.jquery.com/) - Download link
 * [FontAwesome](https://fontawesome.com/v4.7.0/get-started/) - Download link
-* [CSS](minified/code.snippet.min.css) - CSS CodeSnippet ([v2](minified/v2/code.snippet.v2.min.js))
-* [JS](minified/code.snippet.min.js) - JS CodeSnippet ([v2](minified/v2/code.snippet.v2.min.css))
+* [CSS](minified/code.snippet.min.css) - CSS CodeSnippet
+* [JS](minified/code.snippet.min.js) - JS CodeSnippet
 
 
 A continuación se muestra una tabla de contenidos con las versiones mínimas de los navegadores en los que se pueden insertar estos bloques o fragmentos de código.
 
 _Below is a table of contents with the minimum versions of the browsers in which these blocks or code snippets can be inserted._
 
-|                    | jQuery  | FontAwesome | Chrome | Firefox  | Opera | Safari | IE | Edge |
-|--------------------|---------|-------------|--------|----------|-------|--------|----|------|
-| Minimum version v1 | v1.12.4 | v4.7.0      | 4      | 3.5      | 10    | 3.1    | 9  | 12   |
-| Minimum version v2 | v1.12.4 | v4.7.0      | 14     | 20       | 15    | 10.1   |🚫  | 13   |
+|                 | jQuery  | FontAwesome | Chrome | Firefox  | Opera | Safari | IE | Edge |
+|-----------------|---------|-------------|--------|----------|-------|--------|----|------|
+| Minimum version | v1.12.4 | v4.7.0      | 14     | 20       | 15    | 10.1   |🚫  | 13   |
 
 _Versions from [caniuse.com](https://caniuse.com/)_
 
 
-## How to embed (v1) 🔧
+## How to embed 🔧
 Lo primero de todo tendrás que incluir tanto el JS como el CSS de _CodeSnippet_ en tu página HTML.
 
 _First of all you will have to include both the JS and the CSS of _CodeSnippet_ in your HTML page._
 ```
+<!-- inside <head> -->
 <link rel="stylesheet" href="code.snippet.css">
 <script src="code.snippet.js"></script>
 ```
@@ -40,6 +40,7 @@ También está disponible la versión minificada, archivos [aquí](minified/).
 
 _The minified version is also available, files [here](minified/)._
 ```
+<!-- inside <head> -->
 <link rel="stylesheet" href="code.snippet.min.css">
 <script src="code.snippet.min.js"></script>
 ```
@@ -49,11 +50,9 @@ Para insertar un fragmento de código tan solo deberás incluir el esqueleto mos
 _To insert a code snippet, you just have to include the skeleton shown below:_
 
 ```
+<!-- inside <body> -->
 <div class="html-code-snippet">
-    <span class="copy"></span>
-    <ccode>
-        your code snippet here
-    </ccode>
+    your code snippet here
 </div>
 ```
 
@@ -62,28 +61,31 @@ También podrás crear alterar los estilos para diferentes ocasiones, advirtiend
 _You can also create alter the styles for different occasions, warning of good code (success), bad code (danger) and code to be careful with._
 
 ```
+<!-- inside <body> -->
 <div class="html-code-snippet [success|warning|danger]">
-    <span class="copy"></span>
-    <ccode>
-        your code snippet here
-    </ccode>
+    your code snippet here
 </div>
 ```
 
+Existen 2 tipos de acciones, copiar al portapapeles o descargar. Para ello añade simplemente las siguientes clases en función de las acciones que quiera incluir en tu ejemplo.
 
-### How to embed (v2) 🔧
-Es otra forma de embeber este complemento en tu página web escribiendo menos código HTML. Además se ha añadido la opción de descarga.
+_There are 2 types of actions, copy to clipboard or download. To do this, simply add the following classes depending on the actions you want to include in your example._
 
-_It is another way to embed this plugin into your web page by writing less HTML code. In addition, the download option has been added._
+```
+<!-- inside <body> -->
+<div class="html-code-snippet [copy|downlaod]">
+    your code snippet here
+</div>
+```
 
-Podrás poner los estilos con algunas de las clases (success|warning|danger) o las acciones con algunas de las clases (copy|downlaod).
+Combinando todas las opciones quedaría algo similar al siguiente ejemplo:
 
-_You can put the styles with some of the classes (success|warning|danger) or the actions with some of the classes (copy|downlaod)._
+_Combining all the options would be something similar to the following example:_
 
 ```
 <!-- inside <head> -->
-<link rel="stylesheet" href="code.snippet.v2.min.css">
-<script src="code.snippet.v2.min.js"></script>
+<link rel="stylesheet" href="code.snippet.min.css">
+<script src="code.snippet.min.js"></script>
 
 <!-- inside <body> -->
 <div class="html-code-snippet [success|warning|danger] [copy|downlaod]">
@@ -105,7 +107,7 @@ _Download options (currently only available in txt format txt):_
 | .download.download-php  | .php         |
 | .download.download-html | .html        |
 
-Download [here](minified/v2/).
+Download [here](minified/).
 
 
 ## Examples 📦
@@ -123,7 +125,7 @@ Download [here](minified/v2/).
 ## Status and version 🚀
 Status: _unfinished (working)_.
 
-Version: _v1.3.0_
+Version: _v1.4.0_
 
 
 ---

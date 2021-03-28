@@ -1,6 +1,6 @@
 /**
  * CodeSnippet by csegundo
- * code.snippet.v2.js
+ * ccode.snippet.js
  * Copyright (c) 2021 [Carlos](https://github.com/csegundo/CodeSnippet)
  */
 
@@ -32,19 +32,17 @@ $(function(){
     });
 
     $('.html-code-snippet').on('click', '.download', function(){
-        var $temp = $('<a>XXX</a>'),
+        var $temp = $('<a></a>'),
             $temp_ = $('<textarea></textarea>');
         $temp_.html($(this).parents('.html-code-snippet').find('ccode').html().trim());
         $temp_.hide();
         $('body').append($temp_);
         $temp.attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent($temp_.val().trim()));
-        // $temp.attr('href', 'https://www.google.com/');
         $temp.attr('download', 'ccode');
         $temp.hide();
         $('body').append($temp);
-        $temp.click(); // not working
-        // $temp.on('click'); // not working
-        // $temp.remove();
-        // $temp_.remove();
+        $temp.get(0).click(); // jQuery ignores href when click() ==> native DOM method not
+        $temp.remove();
+        $temp_.remove();
     });
 });
