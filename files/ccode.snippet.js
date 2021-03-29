@@ -5,6 +5,8 @@
  */
 
 $(function(){
+    console.log("%c ✔ ccode.snippet.js loaded succesfully! ✔","background-color:#C2D5A7;color:#000;border:1px solid #B2C596;border-radius:3px;padding:3px;");
+    
     // Paste this code into your page
     var _cs = $('.html-code-snippet');
     $.each(_cs, function(i, item){
