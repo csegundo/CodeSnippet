@@ -108,7 +108,7 @@ Download files [here](minified/).
 ## Status and version 🚀
 Status: _first release_ ✅
 
-Version: _v1.5.0_
+Internal version: _v1.5.0_
 
 
 ---
